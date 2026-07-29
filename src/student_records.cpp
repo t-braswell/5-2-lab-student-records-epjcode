@@ -12,11 +12,8 @@ bool isValidStudentId(string id) {
 }
 
 bool isValidScore(double score) {
-    // Return true when score is between 0 and 100, inclusive.
-    if(score>=0 and score <=100){
-        return true;
-    }
-    return false;
+    // changed to simple boolean check
+  return (score >= 0 && score <= 100);  
 }
 
 void printStudent(const Student& student) {
@@ -85,15 +82,9 @@ int findStudentById(const Student students[], int size, string targetId) {
 }
 
 char determineLetterGrade(double score) {
-    // TODO:
-    // Return 'A' for scores 90 or higher.
-    // Return 'B' for scores 80 or higher.
-    // Return 'C' for scores 70 or higher.
-    // Return 'D' for scores 60 or higher.
-    // Return 'F' otherwise.
     if (score >= 90) return 'A';
     else if (score >= 80) return 'B';
     else if (score >= 70) return 'C';
     else if (score >= 60) return 'D';
-    return 'F';
+    else return 'F';
 }
