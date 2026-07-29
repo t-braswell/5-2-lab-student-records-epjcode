@@ -82,9 +82,9 @@ int findStudentById(const Student students[], int size, string targetId) {
 }
 
 char determineLetterGrade(double score) {
-    if (score >= 90) return 'A';
-    else if (score >= 80) return 'B';
-    else if (score >= 70) return 'C';
-    else if (score >= 60) return 'D';
+    if (score >= A_MINIMUM) return 'A';
+    else if (score >= B_MINIMUM) return 'B';
+    else if (score >= C_MINIMUM) return 'C';
+    else if (score >= D_MINIMUM) return 'D';
     else return 'F';
 }
